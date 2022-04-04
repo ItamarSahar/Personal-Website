@@ -42,5 +42,13 @@ function onOpenModal(id) {
 	$('.desc').html(project.desc)
 	$('.date').html(project.publishedAt.toDateString())
 	$('.labels').html(project.labels.toString())
-    $('.check').attr('href', project.url)
+	$('.check').attr('href', project.url)
+}
+
+function onMessageSave() {
+	var newEmail = $('#floatingEmail').val()
+	var newSubject = $('#floatingSub').val()
+	var newText = $('#floatingTextarea2').val()
+	var res = `https://mail.google.com/mail/?view=cm&fs=1&to=${newEmail}&su=${newSubject}&body=${newText}`
+	window.open(res)
 }

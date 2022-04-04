@@ -53,6 +53,34 @@
 			<!-- Contact -->
 			<section id="contact">
 				<h4>Contact Me</h4>
+				<div class="form-floating mb-3">
+					<input
+						type="email"
+						class="form-control"
+						id="floatingEmail"
+						placeholder="name@example.com"
+					/>
+					<label for="floatingInput">Email address</label>
+				</div>
+				<div class="form-floating">
+					<input
+						type="text"
+						class="form-control"
+						id="floatingSub"
+						placeholder="Subject"
+					/>
+					<label for="floatingPassword">Subject</label>
+				</div>
+				<div class="form-floating">
+					<textarea
+						class="form-control"
+						placeholder="Leave a comment here"
+						id="floatingTextarea2"
+						style="height: 100px"
+					></textarea>
+					<label for="floatingTextarea2">Message Body</label>
+				</div>
+				<button type="button" class="btn btn-outline-primary" onclick="onMessageSave()">Submit</button>
 			</section>
 		</aside>
 
@@ -283,7 +311,7 @@
 									<a
 										class="nav-link js-scroll-trigger check"
 										href="https://www.google.com/"
-                    target="_blank"
+										target="_blank"
 										>Check It Out</a
 									>
 									<ul class="list-inline">
